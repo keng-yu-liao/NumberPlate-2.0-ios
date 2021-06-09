@@ -13,18 +13,18 @@
 		18E321472670F9CD00F35AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E321452670F9CD00F35AFA /* Main.storyboard */; };
 		18E3214A2670F9CD00F35AFA /* NumberMachine2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E321482670F9CD00F35AFA /* NumberMachine2.xcdatamodeld */; };
 		18E3214C2670F9D000F35AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214B2670F9D000F35AFA /* Assets.xcassets */; };
-		18E3214F2670F9D000F35AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214D2670F9D000F35AFA /* LaunchScreen.storyboard */; };
+		18E3214F2670F9D000F35AFA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214D2670F9D000F35AFA /* Login.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18E3213C2670F9CD00F35AFA /* NumberMachine2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberMachine2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "免排隊號碼牌app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3213F2670F9CD00F35AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18E321412670F9CD00F35AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18E321432670F9CD00F35AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18E321462670F9CD00F35AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E321492670F9CD00F35AFA /* NumberMachine2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NumberMachine2.xcdatamodel; sourceTree = "<group>"; };
 		18E3214B2670F9D000F35AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18E3214E2670F9D000F35AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18E3214E2670F9D000F35AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		18E321502670F9D000F35AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +50,7 @@
 		18E3213D2670F9CD00F35AFA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18E3213C2670F9CD00F35AFA /* NumberMachine2.app */,
+				18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,14 +60,30 @@
 			children = (
 				18E3213F2670F9CD00F35AFA /* AppDelegate.swift */,
 				18E321412670F9CD00F35AFA /* SceneDelegate.swift */,
-				18E321432670F9CD00F35AFA /* ViewController.swift */,
-				18E321452670F9CD00F35AFA /* Main.storyboard */,
+				18E321572670FB4300F35AFA /* Controller */,
+				18E321562670FB2700F35AFA /* Storyboard */,
 				18E3214B2670F9D000F35AFA /* Assets.xcassets */,
-				18E3214D2670F9D000F35AFA /* LaunchScreen.storyboard */,
 				18E321502670F9D000F35AFA /* Info.plist */,
 				18E321482670F9CD00F35AFA /* NumberMachine2.xcdatamodeld */,
 			);
 			path = NumberMachine2;
+			sourceTree = "<group>";
+		};
+		18E321562670FB2700F35AFA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18E3214D2670F9D000F35AFA /* Login.storyboard */,
+				18E321452670F9CD00F35AFA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		18E321572670FB4300F35AFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18E321432670F9CD00F35AFA /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +103,7 @@
 			);
 			name = NumberMachine2;
 			productName = NumberMachine2;
-			productReference = 18E3213C2670F9CD00F35AFA /* NumberMachine2.app */;
+			productReference = 18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18E3214F2670F9D000F35AFA /* LaunchScreen.storyboard in Resources */,
+				18E3214F2670F9D000F35AFA /* Login.storyboard in Resources */,
 				18E3214C2670F9D000F35AFA /* Assets.xcassets in Resources */,
 				18E321472670F9CD00F35AFA /* Main.storyboard in Resources */,
 			);
@@ -159,12 +175,12 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		18E3214D2670F9D000F35AFA /* LaunchScreen.storyboard */ = {
+		18E3214D2670F9D000F35AFA /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				18E3214E2670F9D000F35AFA /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,13 +305,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HVZ32QAJC;
 				INFOPLIST_FILE = NumberMachine2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liao.NumberMachine2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "免排隊號碼牌app";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,13 +324,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HVZ32QAJC;
 				INFOPLIST_FILE = NumberMachine2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.liao.NumberMachine2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "免排隊號碼牌app";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
