@@ -12,6 +12,10 @@ import UIKit
 class DesignableView: UIView {
 }
 
+@IBDesignable
+class DesignableLabel: UILabel {
+}
+
 extension UIView {
     @IBInspectable
     var cornerRadius: CGFloat {
@@ -48,6 +52,16 @@ extension UIView {
             } else {
                 layer.borderColor = nil
             }
+        }
+    }
+    
+    @IBInspectable
+    var rotation: Int {
+        get {
+            return 0
+        } set {
+            let radians = (CGFloat.pi * CGFloat(newValue) / CGFloat(180.0))
+            self.transform = CGAffineTransform(rotationAngle: radians)
         }
     }
 }

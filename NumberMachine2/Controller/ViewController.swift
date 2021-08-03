@@ -21,9 +21,9 @@ class ViewController: UIViewController {
 
     @IBAction func loginBtnClick(_ sender: Any) {
         let alertController = UIAlertController(title: "提示", message: "請輸入用戶名", preferredStyle: UIAlertController.Style.alert)
-        
+
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        
+
         if (tfLogin.text == "") {
             present(alertController, animated: true, completion: nil)
         } else {
@@ -40,6 +40,12 @@ class ViewController: UIViewController {
                     }
             }
         }
+        self.performSegue(withIdentifier: "goOperation", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as? OperationViewController
+        controller?.fileName = tfLogin.text! + ".txt"
     }
 }
 
