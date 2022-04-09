@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1819EC542696FC9B00FFF78A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819EC532696FC9B00FFF78A /* AppConfig.swift */; };
+		1837AD5026817DB500C05520 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1837AD4F26817DB500C05520 /* Colors.xcassets */; };
+		1837AD532682B79900C05520 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837AD522682B79900C05520 /* ViewExtensions.swift */; };
+		18C4264C26B290C300AA3810 /* response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4264B26B290C300AA3810 /* response.swift */; };
+		18E321402670F9CD00F35AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3213F2670F9CD00F35AFA /* AppDelegate.swift */; };
+		18E321422670F9CD00F35AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E321412670F9CD00F35AFA /* SceneDelegate.swift */; };
+		18E321442670F9CD00F35AFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E321432670F9CD00F35AFA /* ViewController.swift */; };
+		18E3214A2670F9CD00F35AFA /* NumberMachine2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E321482670F9CD00F35AFA /* NumberMachine2.xcdatamodeld */; };
+		18E3214C2670F9D000F35AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214B2670F9D000F35AFA /* Assets.xcassets */; };
+		18E3214F2670F9D000F35AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214D2670F9D000F35AFA /* Main.storyboard */; };
+		18EBE4AA27662B2500D2C764 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBE4A927662B2500D2C764 /* NetworkController.swift */; };
+		E811CE6E6F34AD375FA002C7 /* Pods_NumberMachine2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928FCF6D98301A0E68911AE /* Pods_NumberMachine2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1819EC532696FC9B00FFF78A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		1837AD4F26817DB500C05520 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1837AD522682B79900C05520 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		18C4264B26B290C300AA3810 /* response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = response.swift; sourceTree = "<group>"; };
+		18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "免排隊號碼牌app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18E3213F2670F9CD00F35AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18E321412670F9CD00F35AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18E321432670F9CD00F35AFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18E321492670F9CD00F35AFA /* NumberMachine2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NumberMachine2.xcdatamodel; sourceTree = "<group>"; };
+		18E3214B2670F9D000F35AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18E3214E2670F9D000F35AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18E321502670F9D000F35AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18EBE4A927662B2500D2C764 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		2DCF8B1081BFAB6CCB749870 /* Pods-NumberMachine2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberMachine2.debug.xcconfig"; path = "Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2.debug.xcconfig"; sourceTree = "<group>"; };
+		372B75724749D96D7A76BFA5 /* Pods-NumberMachine2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberMachine2.release.xcconfig"; path = "Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2.release.xcconfig"; sourceTree = "<group>"; };
+		9928FCF6D98301A0E68911AE /* Pods_NumberMachine2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumberMachine2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18E321392670F9CD00F35AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E811CE6E6F34AD375FA002C7 /* Pods_NumberMachine2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1837AD512682AEE500C05520 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1837AD522682B79900C05520 /* ViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18C4264D26B290CB00AA3810 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18C4264B26B290C300AA3810 /* response.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18E321332670F9CD00F35AFA = {
+			isa = PBXGroup;
+			children = (
+				18E3213E2670F9CD00F35AFA /* NumberMachine2 */,
+				18E3213D2670F9CD00F35AFA /* Products */,
+				2054E738DC156763715AE2D0 /* Pods */,
+				AF2B2E5E6523016DC85785A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18E3213D2670F9CD00F35AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18E3213E2670F9CD00F35AFA /* NumberMachine2 */ = {
+			isa = PBXGroup;
+			children = (
+				18EBE4A827662B0600D2C764 /* Core */,
+				1837AD512682AEE500C05520 /* Extensions */,
+				18E3213F2670F9CD00F35AFA /* AppDelegate.swift */,
+				18E321412670F9CD00F35AFA /* SceneDelegate.swift */,
+				18E321572670FB4300F35AFA /* Controller */,
+				18E321562670FB2700F35AFA /* Storyboard */,
+				18E3214B2670F9D000F35AFA /* Assets.xcassets */,
+				18E321502670F9D000F35AFA /* Info.plist */,
+				18E321482670F9CD00F35AFA /* NumberMachine2.xcdatamodeld */,
+				1837AD4F26817DB500C05520 /* Colors.xcassets */,
+				1819EC532696FC9B00FFF78A /* AppConfig.swift */,
+				18C4264D26B290CB00AA3810 /* Model */,
+			);
+			path = NumberMachine2;
+			sourceTree = "<group>";
+		};
+		18E321562670FB2700F35AFA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				18E3214D2670F9D000F35AFA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		18E321572670FB4300F35AFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18E321432670F9CD00F35AFA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		18EBE4A827662B0600D2C764 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18EBE4A927662B2500D2C764 /* NetworkController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2054E738DC156763715AE2D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF8B1081BFAB6CCB749870 /* Pods-NumberMachine2.debug.xcconfig */,
+				372B75724749D96D7A76BFA5 /* Pods-NumberMachine2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AF2B2E5E6523016DC85785A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9928FCF6D98301A0E68911AE /* Pods_NumberMachine2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18E3213B2670F9CD00F35AFA /* NumberMachine2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E321532670F9D000F35AFA /* Build configuration list for PBXNativeTarget "NumberMachine2" */;
+			buildPhases = (
+				C4AF3E3A0BB0E97DC82EE379 /* [CP] Check Pods Manifest.lock */,
+				18E321382670F9CD00F35AFA /* Sources */,
+				18E321392670F9CD00F35AFA /* Frameworks */,
+				18E3213A2670F9CD00F35AFA /* Resources */,
+				81D926F8FEDB04B2890FC4EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NumberMachine2;
+			productName = NumberMachine2;
+			productReference = 18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18E321342670F9CD00F35AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = liao;
+				TargetAttributes = {
+					18E3213B2670F9CD00F35AFA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 18E321372670F9CD00F35AFA /* Build configuration list for PBXProject "NumberMachine2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18E321332670F9CD00F35AFA;
+			productRefGroup = 18E3213D2670F9CD00F35AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18E3213B2670F9CD00F35AFA /* NumberMachine2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18E3213A2670F9CD00F35AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E3214F2670F9D000F35AFA /* Main.storyboard in Resources */,
+				1837AD5026817DB500C05520 /* Colors.xcassets in Resources */,
+				18E3214C2670F9D000F35AFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		81D926F8FEDB04B2890FC4EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4AF3E3A0BB0E97DC82EE379 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NumberMachine2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18E321382670F9CD00F35AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EBE4AA27662B2500D2C764 /* NetworkController.swift in Sources */,
+				18C4264C26B290C300AA3810 /* response.swift in Sources */,
+				18E321442670F9CD00F35AFA /* ViewController.swift in Sources */,
+				18E321402670F9CD00F35AFA /* AppDelegate.swift in Sources */,
+				18E321422670F9CD00F35AFA /* SceneDelegate.swift in Sources */,
+				1819EC542696FC9B00FFF78A /* AppConfig.swift in Sources */,
+				1837AD532682B79900C05520 /* ViewExtensions.swift in Sources */,
+				18E3214A2670F9CD00F35AFA /* NumberMachine2.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18E3214D2670F9D000F35AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18E3214E2670F9D000F35AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18E321512670F9D000F35AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18E321522670F9D000F35AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18E321542670F9D000F35AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCF8B1081BFAB6CCB749870 /* Pods-NumberMachine2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HVZ32QAJC;
+				INFOPLIST_FILE = NumberMachine2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liao.NumberMachine2;
+				PRODUCT_NAME = "免排隊號碼牌app";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18E321552670F9D000F35AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 372B75724749D96D7A76BFA5 /* Pods-NumberMachine2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HVZ32QAJC;
+				INFOPLIST_FILE = NumberMachine2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.liao.NumberMachine2;
+				PRODUCT_NAME = "免排隊號碼牌app";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18E321372670F9CD00F35AFA /* Build configuration list for PBXProject "NumberMachine2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E321512670F9D000F35AFA /* Debug */,
+				18E321522670F9D000F35AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E321532670F9D000F35AFA /* Build configuration list for PBXNativeTarget "NumberMachine2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18E321542670F9D000F35AFA /* Debug */,
+				18E321552670F9D000F35AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18E321482670F9CD00F35AFA /* NumberMachine2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18E321492670F9CD00F35AFA /* NumberMachine2.xcdatamodel */,
+			);
+			currentVersion = 18E321492670F9CD00F35AFA /* NumberMachine2.xcdatamodel */;
+			path = NumberMachine2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18E321342670F9CD00F35AFA /* Project object */;
+}
