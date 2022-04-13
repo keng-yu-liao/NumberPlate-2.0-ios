@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var tfLogin: UITextField!
     @IBOutlet var btnLogin: UIButton!
@@ -45,6 +45,11 @@ class ViewController: UIViewController {
                     }
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       self.view.endEditing(true)
+       return true
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {

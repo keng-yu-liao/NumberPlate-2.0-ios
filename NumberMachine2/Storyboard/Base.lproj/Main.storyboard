@@ -38,7 +38,7 @@
                                             <constraint firstAttribute="height" constant="45" id="5DU-kC-xWu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="10"/>
@@ -52,6 +52,7 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="tf_login:" destination="uuq-RS-H7b" eventType="editingDidEnd" id="SIT-rI-jci"/>
+                                            <outlet property="delegate" destination="MS7-3n-XpK" id="vGW-QG-FDL"/>
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NR-z8-iar">
