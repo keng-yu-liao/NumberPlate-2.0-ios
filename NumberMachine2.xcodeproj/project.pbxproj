@@ -10,6 +10,7 @@
 		18349650281CC39F0041869E /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834964F281CC39F0041869E /* NetworkConfig.swift */; };
 		1837AD5026817DB500C05520 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1837AD4F26817DB500C05520 /* Colors.xcassets */; };
 		1837AD532682B79900C05520 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837AD522682B79900C05520 /* ViewExtensions.swift */; };
+		188709602855D8FF00A37E0B /* OperateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1887095F2855D8FF00A37E0B /* OperateViewController.swift */; };
 		18C4264C26B290C300AA3810 /* response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C4264B26B290C300AA3810 /* response.swift */; };
 		18E321402670F9CD00F35AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E3213F2670F9CD00F35AFA /* AppDelegate.swift */; };
 		18E321422670F9CD00F35AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E321412670F9CD00F35AFA /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		1834964F281CC39F0041869E /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		1837AD4F26817DB500C05520 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1837AD522682B79900C05520 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		1887095F2855D8FF00A37E0B /* OperateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateViewController.swift; sourceTree = "<group>"; };
 		18C4264B26B290C300AA3810 /* response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = response.swift; sourceTree = "<group>"; };
 		18E3213C2670F9CD00F35AFA /* 免排隊號碼牌app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "免排隊號碼牌app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E3213F2670F9CD00F35AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				18E321432670F9CD00F35AFA /* ViewController.swift */,
+				1887095F2855D8FF00A37E0B /* OperateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				18E321442670F9CD00F35AFA /* ViewController.swift in Sources */,
 				18E321402670F9CD00F35AFA /* AppDelegate.swift in Sources */,
 				18E321422670F9CD00F35AFA /* SceneDelegate.swift in Sources */,
+				188709602855D8FF00A37E0B /* OperateViewController.swift in Sources */,
 				1837AD532682B79900C05520 /* ViewExtensions.swift in Sources */,
 				18E3214A2670F9CD00F35AFA /* NumberMachine2.xcdatamodeld in Sources */,
 				18349650281CC39F0041869E /* NetworkConfig.swift in Sources */,

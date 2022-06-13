@@ -33,19 +33,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if (tfLogin.text == "" || tfPassword.text == "") {
             present(alertController, animated: true, completion: nil)
         } else {
-//            let fileName = tfLogin.text! + ".txt"
-//            let param = ["fileName": fileName]
-//            AF.request("\(AppConfig.BASE_API_URL)\(AppConfig.CREATE_FILE)", method: .get, parameters: param).responseJSON { response in
-//                    switch response.result {
-//                        case .success(let jsonObj):
-//                            print(jsonObj)
-//                        case let .failure(error):
-//                            let alertController = UIAlertController(title: "提示", message: error.errorDescription, preferredStyle: UIAlertController.Style.alert)
-//                            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-//                            self.present(alertController, animated: true, completion: nil)
-//                    }
-//            }
-            // NetworkController.login(account: "test", password: "test")
+            NetworkController.self.login(
+                account: tfLogin.text ?? "",
+                password: tfPassword.text ?? "",
+                onSuccess: {
+                    self.performSegue(withIdentifier: "showOperationPage", sender: nil)
+                },
+                onFail: { errorMsg in
+                    print(errorMsg)
+                }
+            )
         }
     }
     

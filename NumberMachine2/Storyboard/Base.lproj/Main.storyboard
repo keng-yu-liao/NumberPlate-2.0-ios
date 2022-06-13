@@ -139,6 +139,7 @@
                         <outlet property="btnLogin" destination="0NR-z8-iar" id="8Ch-Rt-FnD"/>
                         <outlet property="tfLogin" destination="3hE-mC-HQ0" id="4eR-Ju-ddY"/>
                         <outlet property="tfPassword" destination="4Dc-sh-NBU" id="SGf-f9-5oz"/>
+                        <segue destination="5Cd-fh-smm" kind="show" identifier="showOperationPage" id="lFf-8O-R51"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQg-AB-UZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,21 +150,21 @@
         <!--Operation View Controller-->
         <scene sceneID="0yh-79-aR4">
             <objects>
-                <viewController id="5Cd-fh-smm" customClass="OperationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="operatePage" id="5Cd-fh-smm" customClass="OperationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bco-k3-7EP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="MFM-UR-grN">
-                                <rect key="frame" x="0.0" y="34" width="414" height="828"/>
+                                <rect key="frame" x="0.0" y="34" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </imageView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqL-CC-m2R">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-44-rcg" userLabel="bg_num_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
-                                <rect key="frame" x="224" y="104" width="170" height="170"/>
+                                <rect key="frame" x="224" y="60" width="170" height="170"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="RTa-Pu-vIW"/>
@@ -176,7 +177,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSR-wM-G0i" userLabel="bg_qr_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
-                                <rect key="frame" x="20" y="104" width="170" height="170"/>
+                                <rect key="frame" x="20" y="60" width="170" height="170"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="Be3-VM-w2x"/>
@@ -189,7 +190,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-ct-cnY" userLabel="bg_table_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
-                                <rect key="frame" x="16" y="384" width="382" height="386"/>
+                                <rect key="frame" x="16" y="340" width="382" height="376"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -198,7 +199,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfP-6T-1Gc" userLabel="btn_reset">
-                                <rect key="frame" x="16" y="794" width="382" height="42"/>
+                                <rect key="frame" x="16" y="740" width="382" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="kOn-2W-JSb"/>
@@ -233,7 +234,7 @@
                             <constraint firstItem="H8s-ct-cnY" firstAttribute="top" secondItem="9VP-cB-P4J" secondAttribute="top" constant="340" id="Vy8-gY-cVI"/>
                             <constraint firstItem="gqL-CC-m2R" firstAttribute="bottom" secondItem="9VP-cB-P4J" secondAttribute="bottom" id="Wys-x9-tUg"/>
                             <constraint firstItem="MFM-UR-grN" firstAttribute="centerX" secondItem="bco-k3-7EP" secondAttribute="centerX" id="X72-nF-Abj"/>
-                            <constraint firstItem="9VP-cB-P4J" firstAttribute="trailing" secondItem="dfP-6T-1Gc" secondAttribute="trailing" constant="16" id="ZnG-KP-gyB"/>
+                            <constraint firstItem="9VP-cB-P4J" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dfP-6T-1Gc" secondAttribute="trailing" constant="16" id="ZnG-KP-gyB"/>
                             <constraint firstItem="MFM-UR-grN" firstAttribute="centerY" secondItem="bco-k3-7EP" secondAttribute="centerY" id="geG-YM-Sto"/>
                             <constraint firstItem="KSR-wM-G0i" firstAttribute="top" secondItem="9VP-cB-P4J" secondAttribute="top" constant="60" id="jMb-ah-App"/>
                             <constraint firstItem="MFM-UR-grN" firstAttribute="leading" secondItem="gqL-CC-m2R" secondAttribute="leading" id="o7g-7H-z7Z"/>
@@ -243,6 +244,7 @@
                             <constraint firstItem="gqL-CC-m2R" firstAttribute="leading" secondItem="9VP-cB-P4J" secondAttribute="leading" id="zl2-dF-dSb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ta5-QK-nqb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIe-GE-Mn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
