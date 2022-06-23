@@ -164,11 +164,10 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHh-44-rcg" userLabel="bg_num_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
-                                <rect key="frame" x="224" y="60" width="170" height="170"/>
+                                <rect key="frame" x="228.5" y="60" width="165.5" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="RTa-Pu-vIW"/>
-                                    <constraint firstAttribute="height" constant="170" id="hhn-BN-ZKg"/>
+                                    <constraint firstAttribute="height" constant="150" id="hhn-BN-ZKg"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -177,11 +176,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSR-wM-G0i" userLabel="bg_qr_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
-                                <rect key="frame" x="20" y="60" width="170" height="170"/>
+                                <rect key="frame" x="20" y="60" width="165.5" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="170" id="Be3-VM-w2x"/>
-                                    <constraint firstAttribute="height" constant="170" id="JY0-Y8-ibb"/>
+                                    <constraint firstAttribute="height" constant="150" id="JY0-Y8-ibb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -190,7 +188,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-ct-cnY" userLabel="bg_table_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
-                                <rect key="frame" x="16" y="340" width="382" height="376"/>
+                                <rect key="frame" x="16" y="250" width="382" height="466"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -223,6 +221,7 @@
                         <color key="backgroundColor" name="customYellow"/>
                         <constraints>
                             <constraint firstItem="9VP-cB-P4J" firstAttribute="bottom" secondItem="dfP-6T-1Gc" secondAttribute="bottom" constant="26" id="29C-Pq-6xD"/>
+                            <constraint firstItem="mHh-44-rcg" firstAttribute="width" secondItem="gqL-CC-m2R" secondAttribute="width" multiplier="0.4" id="9MR-4Y-p5z"/>
                             <constraint firstItem="dfP-6T-1Gc" firstAttribute="leading" secondItem="9VP-cB-P4J" secondAttribute="leading" constant="16" id="BCQ-7J-XJW"/>
                             <constraint firstItem="KSR-wM-G0i" firstAttribute="leading" secondItem="9VP-cB-P4J" secondAttribute="leading" constant="20" id="CHF-Tp-wS0"/>
                             <constraint firstItem="9VP-cB-P4J" firstAttribute="trailing" secondItem="mHh-44-rcg" secondAttribute="trailing" constant="20" id="ClW-wl-QzP"/>
@@ -231,16 +230,17 @@
                             <constraint firstItem="H8s-ct-cnY" firstAttribute="centerX" secondItem="dfP-6T-1Gc" secondAttribute="centerX" id="MxT-Ya-NGm"/>
                             <constraint firstItem="9VP-cB-P4J" firstAttribute="bottom" secondItem="MFM-UR-grN" secondAttribute="bottom" id="NlF-ZP-h52"/>
                             <constraint firstItem="mHh-44-rcg" firstAttribute="top" secondItem="9VP-cB-P4J" secondAttribute="top" constant="60" id="QXp-G1-NKd"/>
-                            <constraint firstItem="H8s-ct-cnY" firstAttribute="top" secondItem="9VP-cB-P4J" secondAttribute="top" constant="340" id="Vy8-gY-cVI"/>
                             <constraint firstItem="gqL-CC-m2R" firstAttribute="bottom" secondItem="9VP-cB-P4J" secondAttribute="bottom" id="Wys-x9-tUg"/>
                             <constraint firstItem="MFM-UR-grN" firstAttribute="centerX" secondItem="bco-k3-7EP" secondAttribute="centerX" id="X72-nF-Abj"/>
                             <constraint firstItem="9VP-cB-P4J" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dfP-6T-1Gc" secondAttribute="trailing" constant="16" id="ZnG-KP-gyB"/>
                             <constraint firstItem="MFM-UR-grN" firstAttribute="centerY" secondItem="bco-k3-7EP" secondAttribute="centerY" id="geG-YM-Sto"/>
                             <constraint firstItem="KSR-wM-G0i" firstAttribute="top" secondItem="9VP-cB-P4J" secondAttribute="top" constant="60" id="jMb-ah-App"/>
+                            <constraint firstItem="H8s-ct-cnY" firstAttribute="top" secondItem="mHh-44-rcg" secondAttribute="bottom" constant="40" id="kxq-td-vNX"/>
                             <constraint firstItem="MFM-UR-grN" firstAttribute="leading" secondItem="gqL-CC-m2R" secondAttribute="leading" id="o7g-7H-z7Z"/>
                             <constraint firstItem="H8s-ct-cnY" firstAttribute="leading" secondItem="9VP-cB-P4J" secondAttribute="leading" constant="16" id="rXy-dJ-CAz"/>
                             <constraint firstItem="9VP-cB-P4J" firstAttribute="trailing" secondItem="H8s-ct-cnY" secondAttribute="trailing" constant="16" id="rlN-CQ-oG5"/>
                             <constraint firstItem="dfP-6T-1Gc" firstAttribute="top" secondItem="H8s-ct-cnY" secondAttribute="bottom" constant="24" id="t4C-Nf-7Os"/>
+                            <constraint firstItem="KSR-wM-G0i" firstAttribute="width" secondItem="mHh-44-rcg" secondAttribute="width" id="zAv-3d-JLk"/>
                             <constraint firstItem="gqL-CC-m2R" firstAttribute="leading" secondItem="9VP-cB-P4J" secondAttribute="leading" id="zl2-dF-dSb"/>
                         </constraints>
                     </view>
