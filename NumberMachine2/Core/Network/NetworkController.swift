@@ -44,26 +44,38 @@ class NetworkController {
         }
     }
     
-    static func getCurrentNum(fileName: String, onSuccess: @escaping (Response) -> Void, onFail: @escaping (String) -> Void){
-//        let param = ["fileName" : fileName]
-//        var status: String = ""
-//        var data: String = ""
-//        
-//        AF.request("\(AppConfig.BASE_API_URL)\(AppConfig.REQUEST_UNCALL_NUM)", method: .get, parameters: param).responseJSON { response in
-//            switch response.result {
-//            case .success(let jsonObj) :
-//                let resObj = jsonObj as! NSDictionary
-//                status = resObj.object(forKey: STATUS_CODE) as! String
-//                if status == SUCCESS_CODE {
-//                    data = resObj.object(forKey: DATA_CODE) as! String
-//                    onSuccess(Response(status: status, data: data))
-//                } else {
-//                    data = resObj.object(forKey: DATA_CODE) as! String
-//                    onFail(data)
-//                }
-//            case .failure(let error):
-//                onFail(error.errorDescription!)
-//            }
-//        }
+    static func createFile(
+        fileName: String,
+        onSuccess: @escaping () -> Void,
+        onFail: @escaping (String) -> Void
+    ) {
+        let param: Parameters = [
+            "fileName": fileName
+        ]
+        
+        AF.request(
+            NetworkConfig.CREATE_FILE,
+            method: .get,
+            parameters: param
+        ).responseJSON {
+            response in
+            switch response.result {
+            case .success:
+                do {
+                    if response.data != nil {
+                        let nullDataResponse = try JSONDecoder().decode(NullDataResponse.self, from: response.data!)
+                        if nullDataResponse.statusCode == NetworkConfig.SUCCESS_CODE {
+                            onSuccess()
+                        } else {
+                            onFail(nullDataResponse.message ?? "")
+                        }
+                    }
+                } catch let error as NSError {
+                    onFail(error.description)
+                }
+            case .failure(let jsonObj):
+                debugPrint(jsonObj)
+            }
+        }
     }
 }

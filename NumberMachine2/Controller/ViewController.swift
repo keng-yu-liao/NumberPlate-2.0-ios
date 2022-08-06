@@ -37,13 +37,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 account: tfLogin.text ?? "",
                 password: tfPassword.text ?? "",
                 onSuccess: {
-                    self.performSegue(withIdentifier: "showOperationPage", sender: nil)
+                    self.createFile(fileName: self.tfLogin.text ?? "")
                 },
                 onFail: { errorMsg in
                     print(errorMsg)
                 }
             )
         }
+    }
+    
+    func createFile(fileName: String) {
+        NetworkController.self.createFile(
+            fileName: fileName,
+            onSuccess: {
+                self.performSegue(withIdentifier: "showOperationPage", sender: nil)
+            },
+            onFail: { errorMsg in
+                print(errorMsg)
+            }
+        )
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

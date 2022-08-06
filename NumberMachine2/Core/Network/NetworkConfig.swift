@@ -9,13 +9,14 @@
 import Foundation
 
 class NetworkConfig {
-    static let BASE_API_URL = "http://35.206.216.134/dev-2.0/"
+    static let BASE_API_URL = "http://35.206.216.134/dev-2.1/api/"
     static let SUCCESS_CODE = "0000"
     static let FAIL_CODE = "9999"
     
     static let LOGIN_FAIL_CODE = "E0001"
     
-    static let LOGIN_URL = "\(BASE_API_URL)Login.php"
+    static let LOGIN_URL = "\(BASE_API_URL)login.php"
+    static let CREATE_FILE = "\(BASE_API_URL)createFile.php"
 }
 
 struct NullDataResponse : Decodable {
