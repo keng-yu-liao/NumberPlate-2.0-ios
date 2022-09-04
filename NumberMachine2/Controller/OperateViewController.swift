@@ -10,5 +10,11 @@ import UIKit
 import Alamofire
 
 class OperateViewController: UIViewController {
+    var fileName: String?
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("LIAO_17")
+        print(fileName ?? "")
+    }
 }

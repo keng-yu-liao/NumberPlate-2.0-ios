@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
-        <!--Operation View Controller-->
+        <!--Operate View Controller-->
         <scene sceneID="0yh-79-aR4">
             <objects>
-                <viewController storyboardIdentifier="operatePage" id="5Cd-fh-smm" customClass="OperationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="operatePage" id="5Cd-fh-smm" customClass="OperateViewController" customModule="免排隊號碼牌app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bco-k3-7EP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

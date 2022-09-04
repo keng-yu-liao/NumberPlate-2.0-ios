@@ -24,6 +24,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tapEvent = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tapEvent)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let controller = segue.destination as? OperateViewController
+        controller?.fileName = tfLogin.text ?? ""
+    }
 
     @IBAction func loginBtnClick(_ sender: Any) {
         let alertController = UIAlertController(title: "提示", message: "請輸入用戶名與密碼", preferredStyle: UIAlertController.Style.alert)
@@ -50,6 +55,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         NetworkController.self.createFile(
             fileName: fileName,
             onSuccess: {
+                print("LIAO_58")
                 self.performSegue(withIdentifier: "showOperationPage", sender: nil)
             },
             onFail: { errorMsg in
