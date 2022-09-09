@@ -17,6 +17,7 @@ class NetworkConfig {
     
     static let LOGIN_URL = "\(BASE_API_URL)login.php"
     static let CREATE_FILE = "\(BASE_API_URL)createFile.php"
+    static let REQUEST_WAIT_NUM = "\(BASE_API_URL)requestUncallNum.php"
 }
 
 struct NullDataResponse : Decodable {

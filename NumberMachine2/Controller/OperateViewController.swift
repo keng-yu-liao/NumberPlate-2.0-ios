@@ -14,7 +14,39 @@ class OperateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("LIAO_17")
-        print(fileName ?? "")
+        let timer = Timer.scheduledTimer(
+            withTimeInterval: 2,
+            repeats: true,
+            block: { _ in
+                self.requestWaitNum(fileName: self.fileName ?? "")
+            }
+        )
+        timer.fire()
+    }
+    
+    private func requestWaitNum(fileName: String) {
+        NetworkController.self.requestWaitNum(
+            fileName: fileName + ".txt",
+            onSuccess: { data in
+                print("LIAO_24")
+                dump(data)
+            },
+            onFail: { errorMsg in
+                print(errorMsg)
+            }
+        )
+    }
+    
+    private func parseData(data: String) -> WaitNumData {
+        let splitArr = data.components(separatedBy: "&")
+        return WaitNumData (
+            unCallNumStr: splitArr[0],
+            lastNum: splitArr[1]
+        )
+    }
+    
+    struct WaitNumData {
+        var unCallNumStr = ""
+        var lastNum = ""
     }
 }
