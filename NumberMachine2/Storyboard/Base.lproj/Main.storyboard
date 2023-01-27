@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -187,9 +188,23 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-ct-cnY" userLabel="bg_table_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H8s-ct-cnY" userLabel="bg_cl_view" customClass="DesignableView" customModule="免排隊號碼牌app" customModuleProvider="target">
                                 <rect key="frame" x="16" y="250" width="382" height="466"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOg-Jz-sdX" userLabel="container_view">
+                                        <rect key="frame" x="8" y="8" width="366" height="450"/>
+                                        <connections>
+                                            <segue destination="yMf-3Z-ml0" kind="embed" id="VVK-ij-AtB"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gOg-Jz-sdX" firstAttribute="top" secondItem="H8s-ct-cnY" secondAttribute="top" constant="8" id="D0B-Bc-QLq"/>
+                                    <constraint firstAttribute="trailing" secondItem="gOg-Jz-sdX" secondAttribute="trailing" constant="8" id="RNt-xP-4gM"/>
+                                    <constraint firstAttribute="bottom" secondItem="gOg-Jz-sdX" secondAttribute="bottom" constant="8" id="gIY-p1-5XG"/>
+                                    <constraint firstItem="gOg-Jz-sdX" firstAttribute="leading" secondItem="H8s-ct-cnY" secondAttribute="leading" constant="8" id="gdM-2q-FVA"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="20"/>
@@ -245,10 +260,64 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ta5-QK-nqb"/>
+                    <connections>
+                        <outlet property="cv_view" destination="gOg-Jz-sdX" id="pof-C9-zwE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIe-GE-Mn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1211.5942028985507" y="375"/>
+        </scene>
+        <!--Operate Collection View Controller-->
+        <scene sceneID="dIX-b2-mFb">
+            <objects>
+                <viewController storyboardIdentifier="OperateVC" id="yMf-3Z-ml0" customClass="OperateCollectionViewController" customModule="免排隊號碼牌app" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H1p-mE-2tn">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="450"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D3u-5d-3p9">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="1000" contentMode="center" reuseIdentifier="test" id="X7F-y5-CbW" customClass="WaitNumViewCell" customModule="免排隊號碼牌app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="81.5" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="f6b-M2-UrB">
+                                    <rect key="frame" x="0.0" y="0.0" width="81.5" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O95-Ll-yfL">
+                                            <rect key="frame" x="20" y="20" width="41.5" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    <constraints>
+                                        <constraint firstItem="O95-Ll-yfL" firstAttribute="top" secondItem="f6b-M2-UrB" secondAttribute="top" constant="20" id="3U4-P1-eGQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="O95-Ll-yfL" secondAttribute="bottom" constant="20" id="5ik-yQ-E5P"/>
+                                        <constraint firstAttribute="trailing" secondItem="O95-Ll-yfL" secondAttribute="trailing" constant="20" id="Mud-zM-Hs0"/>
+                                        <constraint firstItem="O95-Ll-yfL" firstAttribute="leading" secondItem="f6b-M2-UrB" secondAttribute="leading" constant="20" id="f7C-Q9-vSF"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="waitNumText" destination="O95-Ll-yfL" id="OoH-r1-C2c"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <connections>
+                        <outlet property="cv_operate" destination="H1p-mE-2tn" id="SMk-fF-djO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="994-r1-L3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1872" y="300"/>
         </scene>
     </scenes>
     <resources>
@@ -268,6 +337,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

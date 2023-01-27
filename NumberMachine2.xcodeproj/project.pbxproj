@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18043A73294EAE570073B9E4 /* WaitNumViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18043A72294EAE570073B9E4 /* WaitNumViewCell.swift */; };
 		18349650281CC39F0041869E /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1834964F281CC39F0041869E /* NetworkConfig.swift */; };
 		1837AD5026817DB500C05520 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1837AD4F26817DB500C05520 /* Colors.xcassets */; };
 		1837AD532682B79900C05520 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1837AD522682B79900C05520 /* ViewExtensions.swift */; };
@@ -18,11 +19,13 @@
 		18E3214A2670F9CD00F35AFA /* NumberMachine2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18E321482670F9CD00F35AFA /* NumberMachine2.xcdatamodeld */; };
 		18E3214C2670F9D000F35AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214B2670F9D000F35AFA /* Assets.xcassets */; };
 		18E3214F2670F9D000F35AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E3214D2670F9D000F35AFA /* Main.storyboard */; };
+		18E4BCD7295911E100C6C6E9 /* OperateCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E4BCD6295911E100C6C6E9 /* OperateCollectionViewController.swift */; };
 		18EBE4AA27662B2500D2C764 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EBE4A927662B2500D2C764 /* NetworkController.swift */; };
 		E811CE6E6F34AD375FA002C7 /* Pods_NumberMachine2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9928FCF6D98301A0E68911AE /* Pods_NumberMachine2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18043A72294EAE570073B9E4 /* WaitNumViewCell.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = WaitNumViewCell.swift; sourceTree = "<group>"; };
 		1834964F281CC39F0041869E /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		1837AD4F26817DB500C05520 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1837AD522682B79900C05520 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		18E3214B2670F9D000F35AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18E3214E2670F9D000F35AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18E321502670F9D000F35AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E4BCD6295911E100C6C6E9 /* OperateCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateCollectionViewController.swift; sourceTree = "<group>"; };
 		18EBE4A927662B2500D2C764 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		2DCF8B1081BFAB6CCB749870 /* Pods-NumberMachine2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberMachine2.debug.xcconfig"; path = "Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2.debug.xcconfig"; sourceTree = "<group>"; };
 		372B75724749D96D7A76BFA5 /* Pods-NumberMachine2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumberMachine2.release.xcconfig"; path = "Target Support Files/Pods-NumberMachine2/Pods-NumberMachine2.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18043A71294EADE40073B9E4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				18043A72294EAE570073B9E4 /* WaitNumViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		1834964E281CC3770041869E /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,7 @@
 		18E3213E2670F9CD00F35AFA /* NumberMachine2 */ = {
 			isa = PBXGroup;
 			children = (
+				18043A71294EADE40073B9E4 /* Cell */,
 				18EBE4A827662B0600D2C764 /* Core */,
 				1837AD512682AEE500C05520 /* Extensions */,
 				18E3213F2670F9CD00F35AFA /* AppDelegate.swift */,
@@ -128,6 +141,7 @@
 			children = (
 				18E321432670F9CD00F35AFA /* ViewController.swift */,
 				1887095F2855D8FF00A37E0B /* OperateViewController.swift */,
+				18E4BCD6295911E100C6C6E9 /* OperateCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -278,8 +292,10 @@
 				18E321402670F9CD00F35AFA /* AppDelegate.swift in Sources */,
 				18E321422670F9CD00F35AFA /* SceneDelegate.swift in Sources */,
 				188709602855D8FF00A37E0B /* OperateViewController.swift in Sources */,
+				18043A73294EAE570073B9E4 /* WaitNumViewCell.swift in Sources */,
 				1837AD532682B79900C05520 /* ViewExtensions.swift in Sources */,
 				18E3214A2670F9CD00F35AFA /* NumberMachine2.xcdatamodeld in Sources */,
+				18E4BCD7295911E100C6C6E9 /* OperateCollectionViewController.swift in Sources */,
 				18349650281CC39F0041869E /* NetworkConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
