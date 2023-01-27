@@ -60,21 +60,56 @@ class NetworkController {
         ).responseJSON {
             response in
             switch response.result {
-            case .success:
-                do {
-                    if response.data != nil {
-                        let nullDataResponse = try JSONDecoder().decode(NullDataResponse.self, from: response.data!)
-                        if nullDataResponse.statusCode == NetworkConfig.SUCCESS_CODE {
-                            onSuccess()
-                        } else {
-                            onFail(nullDataResponse.message ?? "")
+                case .success:
+                    do {
+                        if response.data != nil {
+                            let nullDataResponse = try JSONDecoder().decode(NullDataResponse.self, from: response.data!)
+                            if nullDataResponse.statusCode == NetworkConfig.SUCCESS_CODE {
+                                onSuccess()
+                            } else {
+                                onFail(nullDataResponse.message ?? "")
+                            }
                         }
+                    } catch let error as NSError {
+                        onFail(error.description)
                     }
-                } catch let error as NSError {
-                    onFail(error.description)
-                }
-            case .failure(let jsonObj):
-                debugPrint(jsonObj)
+                case .failure(let jsonObj):
+                    debugPrint(jsonObj)
+            }
+        }
+    }
+    
+    static func requestWaitNum(
+        fileName: String,
+        onSuccess: @escaping (String) -> Void,
+        onFail: @escaping (String) -> Void
+    ) {
+        let param: Parameters = [
+            "fileName": fileName
+        ]
+        
+        AF.request(
+            NetworkConfig.REQUEST_WAIT_NUM,
+            method: .get,
+            parameters: param
+        ).responseJSON {
+            response in
+            switch response.result {
+                case .success:
+                    do {
+                        if response.data != nil {
+                            let nullDataResponse = try JSONDecoder().decode(NullDataResponse.self, from: response.data!)
+                            if nullDataResponse.statusCode == NetworkConfig.SUCCESS_CODE {
+                                onSuccess(nullDataResponse.message ?? "")
+                            } else {
+                                onFail(nullDataResponse.message ?? "")
+                            }
+                        }
+                    } catch let error as NSError {
+                        onFail(error.description)
+                    }
+                case .failure(let jsonObj):
+                    debugPrint(jsonObj)
             }
         }
     }
