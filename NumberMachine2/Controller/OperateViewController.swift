@@ -9,19 +9,29 @@
 import UIKit
 import Alamofire
 
-class OperateViewController: UIViewController {
+class OperateViewController: ViewController {
+
     var fileName: String?
+    @IBOutlet weak var cv_view: UIView!
+    
+    var operateVC: OperateCollectionViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let timer = Timer.scheduledTimer(
-            withTimeInterval: 2,
-            repeats: true,
-            block: { _ in
-                self.requestWaitNum(fileName: self.fileName ?? "")
-            }
-        )
-        timer.fire()
+//        let timer = Timer.scheduledTimer(
+//            withTimeInterval: 2,
+//            repeats: true,
+//            block: { _ in
+//                self.requestWaitNum(fileName: self.fileName ?? "")
+//            }
+//        )
+//        timer.fire()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let operateCVV = storyboard.instantiateViewController(withIdentifier: "OperateVC") as! OperateCollectionViewController
+        addChild(operateCVV)
+        self.operateVC = operateCVV
+        print("LIAO_33")
+        
     }
     
     private func requestWaitNum(fileName: String) {
